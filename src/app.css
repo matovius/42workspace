@@ -1,0 +1,197 @@
+@import url('@fontsource-variable/lexend');
+@import url('./styles/reset.css');
+
+:root {
+  /* FONTS */
+  /* Families */
+  --font-sys: system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  --font-lexend: 'Lexend Variable', var(--font-sys);
+  /* Typescale */
+  --fs-sm: clamp(0.8rem, 0.07vi + 0.79rem, 0.84rem);
+  --fs-base: clamp(1rem, 0.21vi + 0.96rem, 1.13rem);
+  --fs-md: clamp(1.25rem, 0.42vi + 1.17rem, 1.5rem);
+  --fs-lg: clamp(1.56rem, 0.73vi + 1.42rem, 2rem);
+  --fs-xl: clamp(1.95rem, 1.19vi + 1.72rem, 2.66rem);
+  --fs-xxl: clamp(2.44rem, 1.85vi + 2.07rem, 3.55rem);
+  --fs-xxxl: clamp(3.05rem, 2.81vi + 2.49rem, 4.73rem);
+
+  /* COLORS */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  /* Brand */
+  --clr-cinnabar: hsl(11, 81%, 58%);
+  --clr-azul: hsl(204, 99%, 36%);
+  --clr-kessler: hsl(173, 97%, 38%);
+  --clr-oxford-blue: hsl(231, 100%, 5%);
+  --clr-lavender: hsl(231, 100%, 97%);
+  /* Neutral Palette */
+  --clr-neutral-50: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 95%);
+  --clr-neutral-100: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 90%);
+  --clr-neutral-200: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 80%);
+  --clr-neutral-300: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 70%);
+  --clr-neutral-400: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 60%);
+  --clr-neutral-500: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 50%);
+  --clr-neutral-600: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 40%);
+  --clr-neutral-700: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 30%);
+  --clr-neutral-800: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 20%);
+  --clr-neutral-900: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 10%);
+  --clr-neutral-950: color-mix(in oklab, var(--clr-oxford-blue), var(--clr-lavender) 5%);
+  /* Primary Palette */
+  --clr-primary-50: color-mix(in oklab, var(--clr-cinnabar), var(--clr-white) 90%);
+  --clr-primary-100: color-mix(in oklab, var(--clr-cinnabar), var(--clr-white) 80%);
+  --clr-primary-200: color-mix(in oklab, var(--clr-cinnabar), var(--clr-white) 60%);
+  --clr-primary-300: color-mix(in oklab, var(--clr-cinnabar), var(--clr-white) 40%);
+  --clr-primary-400: color-mix(in oklab, var(--clr-cinnabar), var(--clr-white) 20%);
+  --clr-primary-500: color-mix(in oklab, var(--clr-cinnabar), var(--clr-white) 0%);
+  --clr-primary-600: color-mix(in oklab, var(--clr-cinnabar), var(--clr-black) 20%);
+  --clr-primary-700: color-mix(in oklab, var(--clr-cinnabar), var(--clr-black) 40%);
+  --clr-primary-800: color-mix(in oklab, var(--clr-cinnabar), var(--clr-black) 60%);
+  --clr-primary-900: color-mix(in oklab, var(--clr-cinnabar), var(--clr-black) 80%);
+  --clr-primary-950: color-mix(in oklab, var(--clr-cinnabar), var(--clr-black) 90%);
+}
+
+*,
+*::before,
+*::after {
+  transition: all 200ms ease-out;
+}
+
+body {
+  font-family: var(--font-lexend);
+  background: var(--clr-neutral-50);
+}
+
+.h1 {
+  font-size: var(--fs-xxxl);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.h2 {
+  font-size: var(--fs-xxl);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.h3 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.h4 {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.h5 {
+  font-size: var(--fs-md);
+  font-weight: 600;
+}
+
+.p {
+  font-size: var(--fs-base);
+}
+
+.small {
+  font-size: var(--fs-sm);
+}
+
+.btn {
+  /* Configurations */
+  --btn-padding: .375rem .9375rem;
+  --btn-gap: .75rem;
+  --btn-bg: var(--clr-neutral-900);
+  --btn-color: var(--clr-neutral-50);
+  --btn-hover-bg: var(--clr-neutral-50);
+  --btn-hover-color: var(--clr-neutral-900);
+  --btn-border-width: 2px;
+  --btn-border-style: solid;
+  --btn-border-color: transparent;
+  --btn-radius: 9999rem;
+
+  text-decoration: none;
+  font-weight: var(--btn-font-weight, 600);
+  letter-spacing: 0.05ch;
+  font-family: var(--font-lexend);
+  line-height: 1.1;
+  color: var(--btn-color);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--btn-gap);
+  padding: var(--btn-padding);
+  border: none;
+  border-radius: var(--btn-radius);
+  background: var(--btn-bg);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn * {
+  z-index: 100;
+}
+
+.btn::before {
+  content: "";
+  background: var(--btn-hover-bg);
+  width: 0;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  inset-inline-start: -.375rem;
+  z-index: 5;
+}
+
+.btn:is(:hover, :focus) {
+  color: var(--btn-hover-color);
+}
+
+.btn:is(:hover, :focus)::before {
+  width: 110%;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:focus-visible {
+  outline-color: var(--clr-neutral-950);
+}
+
+.btn.btn-inverse {
+  --btn-bg: var(--clr-neutral-50);
+  --btn-color: var(--clr-neutral-900);
+  --btn-hover-bg: var(--clr-neutral-900);
+  --btn-hover-color: var(--clr-neutral-50);
+}
+
+.btn.btn-primary {
+  --btn-bg: var(--clr-primary-500);
+  --btn-color: var(--clr-white);
+  --btn-hover-bg: var(--clr-neutral-900);
+  --btn-hover-color: var(--clr-white);
+}
+
+.btn.btn-ghost {
+  --btn-bg: transparent;
+  --btn-color: var(--clr-neutral-900);
+  --btn-border-color: var(--clr-neutral-900);
+  --btn-hover-bg: var(--clr-neutral-900);
+  --btn-hover-color: var(--clr-neutral-50);
+}

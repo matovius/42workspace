@@ -63,6 +63,7 @@
 *,
 *::before,
 *::after {
+  color: unset;
   transition: all 200ms ease-out;
 }
 

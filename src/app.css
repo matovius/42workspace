@@ -162,6 +162,9 @@ body {
 
 .btn:is(:hover, :focus) {
   color: var(--btn-hover-color);
+  background: transparent;
+  transition: background 100ms ease-out;
+  transition-delay: 200ms;
 }
 
 .btn:is(:hover, :focus)::before {

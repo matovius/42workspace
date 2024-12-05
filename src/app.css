@@ -116,8 +116,8 @@ body {
   --btn-gap: .75rem;
   --btn-bg: var(--clr-neutral-900);
   --btn-color: var(--clr-neutral-50);
-  --btn-hover-bg: var(--clr-neutral-50);
-  --btn-hover-color: var(--clr-neutral-900);
+  --btn-hover-bg: var(--clr-primary-500);
+  --btn-hover-color: var(--clr-white);
   --btn-border-width: 2px;
   --btn-border-style: solid;
   --btn-border-color: transparent;

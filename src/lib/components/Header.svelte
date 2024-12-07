@@ -1,4 +1,10 @@
 <script lang="ts">
+	import Logo from "$lib/components/Logo.svelte";
+	import Modal from "$lib/components/primitives/Modal.svelte";
+	import { quadOut } from "svelte/easing";
+	import { fly } from "svelte/transition";
+
+  let isMobileMenuOpen: boolean = false;
 </script>
 
 <header>
@@ -33,9 +39,37 @@
         </button>
       </div>
       <div class="mobile-nav">
-        <button class="btn btn-ghost" aria-label="Open navigation menu">
+        <button class="btn btn-ghost" aria-label="Open navigation menu" onclick={() => { isMobileMenuOpen = true; }}>
           <span aria-hidden="true">Menu</span>
         </button>
+        <Modal bind:isOpen={isMobileMenuOpen}>
+          {#if isMobileMenuOpen}
+            <div class="mobile-nav-menu" transition:fly={{ duration: 200, easing: quadOut, x: 0, y: "-100%", opacity: 1 }}>
+              <div>
+                <button class="btn btn-ghost" aria-label="Close navigation menu" onclick={() => { isMobileMenuOpen = false; }}>
+                  <span aria-hidden="true">Close</span>
+                </button>
+              </div>
+              <ul class="mobile-nav-list">
+                <li>
+                  <a href="/" class="nav-link mobile">Spaces</a>
+                </li>
+                <li>
+                  <a href="/" class="nav-link mobile">Events</a>
+                </li>
+                <li>
+                  <a href="/" class="nav-link mobile">Pricing</a>
+                </li>
+                <li>
+                  <a href="/" class="nav-link mobile">Blog</a>
+                </li>
+                <li>
+                  <a href="/" class="btn btn-primary">Book a tour</a>
+                </li>
+              </ul>
+            </div>
+          {/if}
+        </Modal>
       </div>
     </div>
   </div>
@@ -139,6 +173,27 @@
         display: none;
       }
     }
+  }
+
+  div.mobile-nav-menu {
+    /* width: 100%; */
+    background: var(--clr-white);
+    padding: 12px;
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    border-radius: 0 0 1.5rem 1.5rem; /* 24px */
+  }
+  div.mobile-nav-menu > div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  ul.mobile-nav-list {
+    list-style: none;
+    display: grid;
+    gap: .75rem; /* 12px */
   }
 </style>
 

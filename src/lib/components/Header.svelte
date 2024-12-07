@@ -11,7 +11,7 @@
   <div class="container">
     <div class="side start">
       <a href="/" class="home-link" aria-label="Go to homepage">
-        <div class="icon" aria-hidden="true">42</div>
+        <Logo />
       </a>
 
       <nav>
@@ -115,14 +115,10 @@
 
   a.home-link {
     text-decoration: none;
-  }
-  a.home-link > .icon {
-    color: transparent;
     width: 36px;
-    height: auto;
-    aspect-ratio: 1;
-    background: var(--clr-neutral-300);
-    user-select: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
 
   div.side.start nav {

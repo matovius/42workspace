@@ -83,7 +83,7 @@
     align-items: center;
     padding-inline: .75rem; /* 12px */
     box-shadow: 0 2px 0 0 var(--clr-neutral-100);
-    background: var(--clr-neutral-50);
+    background: var(--clr-white);
     position: fixed;
     inset-inline: 0;
     inset-block-start: 0;

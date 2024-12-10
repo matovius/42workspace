@@ -67,10 +67,34 @@
   transition: all 200ms ease-out;
 }
 
+::selection {
+  color: var(--clr-white);
+  background: var(--clr-primary-500);
+}
+
 body {
   font-family: var(--font-lexend);
   color: var(--clr-neutral-900);
   background: var(--clr-neutral-50);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-inline: .75rem;
+  /* 12px */
+}
+
+section>div.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .h1 {

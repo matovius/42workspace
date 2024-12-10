@@ -1,0 +1,104 @@
+<script lang="ts">
+</script>
+
+<footer>
+  <div class="container">
+    <div class="links">
+      <ul class="link-group site-links">
+        <li>
+          <a href="/#" class="footer-link">Spaces</a>
+        </li>
+        <li>
+          <a href="/#" class="footer-link">Events</a>
+        </li>
+        <li>
+          <a href="/#" class="footer-link">Pricing</a>
+        </li>
+        <li>
+          <a href="/#" class="footer-link">Blog</a>
+        </li>
+        <li>
+          <a href="/#" class="footer-link">Startup Visa Program</a>
+        </li>
+        <li>
+          <a href="/#" class="footer-link">Careers</a>
+        </li>
+      </ul>
+
+      <ul class="link-group social-links">
+        <li>
+          <a href="/#" class="footer-link">Get in touch</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/" class="footer-link">Facebook</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/" class="footer-link">LinkedIn</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" class="footer-link">Instagram</a>
+        </li>
+      </ul>
+      
+      <ul class="link-group legal-links">
+        <li>
+          <a href="/#" class="footer-link">Code of conduct</a>
+        </li>
+        <li>
+          <a href="/#" class="footer-link">Press kit</a>
+        </li>
+        <li>
+          <a href="/#" class="footer-link">Privacy policy</a>
+        </li>
+        <li>
+          <a href="/#" class="footer-link">Terms and conditions</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="statements">
+      <small class="small vat-statement">All prices exclude VAT/BTW unless mentioned otherwise.</small>
+      <small class="small copyright-statement">Copyright 42workspace - 2024. Constructed by The Webware Workshop.</small>
+    </div>
+  </div>
+</footer>
+
+
+<style>
+  footer {
+    color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: .75rem; /* 12px */
+    background: var(--clr-primary-500);
+  }
+  footer *::selection {
+    background: var(--clr-oxford-blue);
+  }
+  footer > div.container {
+    width: 100%;
+    max-width: 75rem; /* 1200px */
+    padding-block: 3.75rem; /* 60px */
+  }
+
+  div.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem; /* 24px */
+  }
+  ul.link-group {
+    list-style: none;
+  }
+
+  footer div.statements {
+    color: color-mix(in oklab, var(--clr-white), transparent 50%);
+    padding-block-start: 3.75rem; /* 60px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .75rem; /* 12px */
+  }
+</style>
+

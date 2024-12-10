@@ -52,19 +52,19 @@
               </div>
               <ul class="mobile-nav-list">
                 <li>
-                  <a href="/" class="nav-link mobile">Spaces</a>
+                  <a href="/" class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>Spaces</a>
                 </li>
                 <li>
-                  <a href="/" class="nav-link mobile">Events</a>
+                  <a href="/" class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>Events</a>
                 </li>
                 <li>
-                  <a href="/" class="nav-link mobile">Pricing</a>
+                  <a href="/" class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>Pricing</a>
                 </li>
                 <li>
-                  <a href="/" class="nav-link mobile">Blog</a>
+                  <a href="/" class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>Blog</a>
                 </li>
                 <li>
-                  <a href="/" class="btn btn-primary">Book a tour</a>
+                  <a href="/" class="btn btn-primary" onclick={() => { isMobileMenuOpen = false; }}>Book a tour</a>
                 </li>
               </ul>
             </div>

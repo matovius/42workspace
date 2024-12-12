@@ -4,7 +4,7 @@
 <section id="community-and-offering" class="community-and-offering-section">
   <div class="container">
     <div class="community">
-      <h2 class="h2">The workspace for tech startups and scale-ups</h2>
+      <h2 class="h2">We're the workspace for tech startups and scale-ups</h2>
       <p class="p">
         Join our community of innovative tech startups, software-driven companies, and experienced scale-ups in Rotterdam,
         all aiming for global expansion and international success. The companies and entrepreneurs we harbour are open and

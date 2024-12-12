@@ -138,23 +138,6 @@
     gap: .1875rem; /* 3px */
   }
 
-  a.nav-link {
-    color: var(--clr-neutral-600);
-    font-weight: 500;
-    text-decoration: none;
-    padding: .1875rem .5625rem; /* 3px 9px */
-    border-radius: 9999rem;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-  a.nav-link:is(:hover, :focus) {
-    color: var(--clr-neutral-900);
-    background: var(--clr-neutral-200);
-  }
-  a.nav-link:focus-visible {
-    outline-color: var(--clr-black);
-  }
-
   div.side.end > .cta {
     display: none;
 

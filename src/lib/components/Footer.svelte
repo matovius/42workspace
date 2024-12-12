@@ -93,9 +93,10 @@
   }
 
   div.links {
+    width: max-content;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.5rem; /* 24px */
+    gap: 1.875rem; /* 30px */
+    padding-inline: 1.5rem; /* 24px */
   }
   ul.link-group {
     list-style: none;

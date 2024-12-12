@@ -11,6 +11,7 @@
   </div>
 
   <div class="container">
+
     <div class="links">
       <ul class="link-group site-links">
         <li>
@@ -100,6 +101,26 @@
   }
   ul.link-group {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .375rem; /* 6px */
+  }
+
+  a.footer-link {
+    font-weight: 500;
+    text-decoration: none;
+    padding: .1875rem .5625rem; /* 3px, 9px */
+    border-radius: 9999rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  a.footer-link:is(:hover, :focus) {
+    background: var(--clr-primary-600);
+  }
+  a.footer-link:focus-visible {
+    outline-color: var(--clr-black);
   }
 
   footer div.statements {

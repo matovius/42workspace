@@ -1,7 +1,15 @@
 <script lang="ts">
+	import Logo from "./Logo.svelte";
+
 </script>
 
 <footer>
+  <div class="sick-bg">
+    <div class="huge-logo">
+      <Logo baseColor="white" accentColor="white" />
+    </div>
+  </div>
+
   <div class="container">
     <div class="links">
       <ul class="link-group site-links">
@@ -66,12 +74,14 @@
 
 <style>
   footer {
+    isolation: isolate;
     color: var(--clr-white);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-inline: .75rem; /* 12px */
     background: var(--clr-primary-500);
+    position: relative;
   }
   footer *::selection {
     background: var(--clr-oxford-blue);
@@ -99,6 +109,27 @@
     align-items: center;
     flex-wrap: wrap;
     gap: .75rem; /* 12px */
+  }
+
+  div.sick-bg {
+    position: absolute;
+    inset: 0;
+    overflow: clip;
+    user-select: none;
+    pointer-events: none;
+    z-index: -1;
+  }
+  div.huge-logo {
+    width: 100%;
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-end: 0;
+    transform: translateY(-60%) rotate(-30deg);
+    opacity: 0.1;
+
+    @media screen and (min-width: 600px) {
+      width: 50%;
+    }
   }
 </style>
 

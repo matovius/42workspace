@@ -11,7 +11,7 @@
         Or host your own private or open events in one of our incredible spaces.
       </p>
       <div class="cta">
-        <button class="btn btn-inverse" aria-label="Book a tour">
+        <button class="btn btn-inverse" aria-label="Find out more">
           <span aria-hidden="true">Find out more</span>
         </button>
       </div>

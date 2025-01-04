@@ -26,7 +26,7 @@
 </section>
 
 <style>
-  /* HERO SECTION */
+  /* EVENTS SECTION */
   section.events-section {
     color: var(--clr-white);
     background: var(--clr-oxford-blue);

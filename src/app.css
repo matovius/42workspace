@@ -83,11 +83,13 @@ body:has(dialog[open]) {
 }
 
 section {
+  isolation: isolate;
   width: 100%;
   display: flex;
   justify-content: center;
   padding-inline: .75rem;
   /* 12px */
+  position: relative;
 }
 
 section>div.container {

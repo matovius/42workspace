@@ -1,19 +1,35 @@
 <script lang="ts">
+	import { browser } from "$app/environment";
 	import Logo from "$lib/components/Logo.svelte";
 	import Modal from "$lib/components/primitives/Modal.svelte";
 	import { quadOut } from "svelte/easing";
 	import { fly } from "svelte/transition";
 
-  let isMobileMenuOpen: boolean = false;
+  let isMobileMenuOpen: boolean = $state(false);
+  let isHeaderScrolled: boolean = $state(false);
+
+  function checkScroll() {
+    if (browser) {
+      if (window.scrollY > 10) {
+        isHeaderScrolled = true;
+      } else {
+        isHeaderScrolled = false;
+      }
+    }
+  }
 </script>
 
-<header>
+<svelte:window onscroll={checkScroll} />
+
+<header data-scrolled={isHeaderScrolled}>
   <div class="container">
     <div class="side start">
       <a href="/" class="home-link" aria-label="Go to homepage">
-        <Logo />
+        <Logo baseColor={isHeaderScrolled ? '#000521' : 'white'} />
       </a>
+    </div>
 
+    <div class="side end">
       <nav>
         <ul class="nav-list">
           <li>
@@ -30,16 +46,14 @@
           </li>
         </ul>
       </nav>
-    </div>
-
-    <div class="side end">
+      
       <div class="cta">
-        <button class="btn btn-default" aria-label="Book a tour">
+        <button class="btn {isHeaderScrolled ? 'btn-default' : 'btn-inverse'} btn-book-a-tour" aria-label="Book a tour">
           <span aria-hidden="true">Book a tour</span>
         </button>
       </div>
       <div class="mobile-nav">
-        <button class="btn btn-ghost" aria-label="Open navigation menu" onclick={() => { isMobileMenuOpen = true; }}>
+        <button class="btn btn-inverse" aria-label="Open navigation menu" onclick={() => { isMobileMenuOpen = true; }}>
           <span aria-hidden="true">Menu</span>
         </button>
         <Modal bind:isOpen={isMobileMenuOpen}>
@@ -78,16 +92,20 @@
 
 <style>
   header {
+    color: var(--clr-white);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-inline: .75rem; /* 12px */
-    box-shadow: 0 2px 0 0 var(--clr-neutral-100);
-    background: var(--clr-white);
+    background: linear-gradient(180deg, var(--clr-oxford-blue) 80%, tranparent);
     position: fixed;
     inset-inline: 0;
     inset-block-start: 0;
     z-index: 100;
+  }
+  header[data-scrolled=true] {
+    background: var(--clr-white);
+    color: var(--clr-oxford-blue);
   }
   header > div.container {
     width: 100%;
@@ -121,7 +139,7 @@
     align-items: center;
   }
 
-  div.side.start nav {
+  div.side.end nav {
     display: none;
 
     @media screen and (min-width: 31.25rem) /* 500px */ {
@@ -173,6 +191,11 @@
     list-style: none;
     display: grid;
     gap: .75rem; /* 12px */
+  }
+
+  .btn.btn-inverse.btn-book-a-tour {
+    --btn-hover-bg: var(--clr-primary-500);
+    --btn-hover-color: var(--clr-white);
   }
 </style>
 

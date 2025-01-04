@@ -38,8 +38,14 @@
 
 <style>
   /* HERO SECTION */
+  section.hero-section {
+    color: var(--clr-white);
+    min-height: 100vh;
+    min-height: 100lvh;
+    background: var(--clr-oxford-blue);
+  }
   section.hero-section > div.container {
-    padding-block: 7.5rem 3.75rem; /* 120px, 60px */
+    padding-block: 12.5rem 6rem; /* 200px, 96px */
   }
   /* Lead */
   section.hero-section div.lead {

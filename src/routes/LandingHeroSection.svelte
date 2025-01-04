@@ -10,7 +10,7 @@
         Being in the heart of Rotterdam, we provide the perfect environment and network to take your business to the next level.
       </p>
       <div class="cta">
-        <button class="btn btn-primary" aria-label="Book a tour">
+        <button class="btn btn-primary btn-book-a-tour" aria-label="Book a tour">
           <span aria-hidden="true">Book a tour</span>
         </button>
       </div>
@@ -98,5 +98,9 @@
     background: var(--clr-neutral-200);
     border-radius: 9999rem;
   }
-</style>
 
+  .btn.btn-primary.btn-book-a-tour {
+    --btn-hover-bg: var(--clr-white);
+    --btn-hover-color: var(--clr-neutral-900);
+  }
+</style>

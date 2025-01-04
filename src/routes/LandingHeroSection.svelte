@@ -16,12 +16,6 @@
       </div>
     </div>
 
-    <div class="image-cloud">
-      <div class="image one"></div>
-      <div class="image two"></div>
-      <!-- <div class="image three"></div> -->
-    </div>
-
     <div class="featured">
       <h6 class="h5">As featured on</h6>
       <ul class="featured-list">
@@ -70,38 +64,6 @@
   }
   section.hero-section button.btn {
     --btn-padding: 24px 60px;
-  }
-  /* Image Cloud */
-  div.image-cloud {
-    padding-block-start: 1.5rem; /* 24px */
-    margin-inline: auto;
-    display: flex;
-    flex-direction: row;
-    user-select: none;
-  }
-  div.image {
-    --_size: 11.25rem; /* 180px */
-    width: var(--_size);
-    height: auto;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 12px solid var(--clr-primary-500);
-    background: var(--clr-neutral-200);
-
-    @media screen and (min-width: 640px) {
-      --_size: 12.5rem; /* 200px */
-    }
-
-    @media screen and (min-width: 720px) {
-      --_size: 15rem; /* 240px */
-    }
-
-    @media screen and (min-width: 960px) {
-      --_size: 17.5rem; /* 280px */
-    }
-  }
-  div.image:not(.one) {
-    margin-inline-start: -3rem; /* 48px */
   }
   /* Featured */
   div.featured {

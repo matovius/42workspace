@@ -73,7 +73,7 @@
   }
   /* Featured */
   div.featured {
-    padding-block-start: 3rem; /* 48px */
+    padding-block-start: 6rem; /* 96px */
     display: flex;
     flex-direction: column;
     justify-content: center;

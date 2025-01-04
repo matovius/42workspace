@@ -54,6 +54,7 @@
   }
   section.events-section button.btn {
     --btn-padding: 12px 36px;
+    --btn-outline-color: var(--clr-white);
   }
   /* Image Cloud */
   div.image-cloud {

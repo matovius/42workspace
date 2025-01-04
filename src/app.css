@@ -148,6 +148,7 @@ section>div.container {
   --btn-border-style: solid;
   --btn-border-color: transparent;
   --btn-radius: 9999rem;
+  --btn-outline-color: var(--clr-neutral-950);
 
   text-decoration: none;
   font-weight: var(--btn-font-weight, 600);
@@ -202,7 +203,7 @@ section>div.container {
 }
 
 .btn:focus-visible {
-  outline-color: var(--clr-neutral-950);
+  outline-color: var(--btn-outline-color);
 }
 
 .btn.btn-inverse {

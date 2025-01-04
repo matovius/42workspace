@@ -5,8 +5,223 @@
 
 <footer>
   <div class="sick-bg">
-    <div class="huge-logo">
-      <Logo baseColor="white" accentColor="white" />
+    <div class="logo-grid">
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
+      <div class="logo-wrapper">
+        <Logo baseColor="white" accentColor="white" />
+      </div>
     </div>
   </div>
 
@@ -141,17 +356,15 @@
     pointer-events: none;
     z-index: -1;
   }
-  div.huge-logo {
+  div.logo-grid {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 7.5rem); /* 120px */
+    gap: 7.5rem; /* 120px */
     position: absolute;
-    inset-block-start: 50%;
-    inset-inline-end: 0;
-    transform: translateY(-60%) rotate(-30deg);
+    inset: 0;
+    transform: translate(0, -15rem) rotate(-30deg);
     opacity: 0.1;
-
-    @media screen and (min-width: 600px) {
-      width: 50%;
-    }
   }
 </style>
 

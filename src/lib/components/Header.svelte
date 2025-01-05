@@ -137,6 +137,12 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    border-radius: .375rem; /* 6px */
+    outline: 2px solid transparent;
+    outline-offset: 6px;
+  }
+  a.home-link:focus-visible {
+    outline-color: var(--clr-primary-500);
   }
 
   div.side.end nav {

@@ -230,52 +230,52 @@
     <div class="links">
       <ul class="link-group site-links">
         <li>
-          <a href="/#" class="footer-link">Spaces</a>
+          <a href="/#" class="nav-link">Spaces</a>
         </li>
         <li>
-          <a href="/#" class="footer-link">Events</a>
+          <a href="/#" class="nav-link">Events</a>
         </li>
         <li>
-          <a href="/#" class="footer-link">Pricing</a>
+          <a href="/#" class="nav-link">Pricing</a>
         </li>
         <li>
-          <a href="/#" class="footer-link">Blog</a>
+          <a href="/#" class="nav-link">Blog</a>
         </li>
         <li>
-          <a href="/#" class="footer-link">Startup Visa Program</a>
+          <a href="/#" class="nav-link">Startup Visa Program</a>
         </li>
         <li>
-          <a href="/#" class="footer-link">Careers</a>
+          <a href="/#" class="nav-link">Careers</a>
         </li>
       </ul>
 
       <ul class="link-group social-links">
         <li>
-          <a href="/#" class="footer-link">Get in touch</a>
+          <a href="/#" class="nav-link">Get in touch</a>
         </li>
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/" class="footer-link">Facebook</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/" class="nav-link">Facebook</a>
         </li>
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/" class="footer-link">LinkedIn</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/" class="nav-link">LinkedIn</a>
         </li>
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" class="footer-link">Instagram</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" class="nav-link">Instagram</a>
         </li>
       </ul>
       
       <ul class="link-group legal-links">
         <li>
-          <a href="/#" class="footer-link">Code of conduct</a>
+          <a href="/#" class="nav-link">Code of conduct</a>
         </li>
         <li>
-          <a href="/#" class="footer-link">Press kit</a>
+          <a href="/#" class="nav-link">Press kit</a>
         </li>
         <li>
-          <a href="/#" class="footer-link">Privacy policy</a>
+          <a href="/#" class="nav-link">Privacy policy</a>
         </li>
         <li>
-          <a href="/#" class="footer-link">Terms and conditions</a>
+          <a href="/#" class="nav-link">Terms and conditions</a>
         </li>
       </ul>
     </div>
@@ -323,19 +323,11 @@
     gap: .375rem; /* 6px */
   }
 
-  a.footer-link {
-    font-weight: 500;
-    text-decoration: none;
-    padding: .1875rem .5625rem; /* 3px, 9px */
-    border-radius: 9999rem;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-  a.footer-link:is(:hover, :focus) {
-    background: var(--clr-primary-600);
-  }
-  a.footer-link:focus-visible {
-    outline-color: var(--clr-black);
+  a.nav-link {
+    --nav-color: var(--clr-white);
+    --nav-hover-color: var(--clr-white);
+    --nav-hover-bg: var(--clr-primary-600);
+    --nav-outline-color: var(--clr-primary-900);
   }
 
   footer div.statements {
@@ -367,4 +359,3 @@
     opacity: 0.1;
   }
 </style>
-

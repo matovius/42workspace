@@ -152,7 +152,6 @@
       display: block;
     }
   }
-
   ul.nav-list {
     list-style: none;
     display: inline-flex;
@@ -160,6 +159,16 @@
     justify-content: center;
     align-items: center;
     gap: .1875rem; /* 3px */
+  }
+  a.nav-link {
+    --nav-color: var(--clr-neutral-600);
+    --nav-hover-color: var(--clr-white);
+    --nav-outline-color: var(--clr-white);
+  }
+  header[data-scrolled=true] a.nav-link {
+    --nav-color: var(--clr-neutral-400);
+    --nav-hover-color: var(--clr-neutral-900);
+    --nav-outline-color: var(--clr-neutral-900);
   }
 
   div.side.end > .cta {

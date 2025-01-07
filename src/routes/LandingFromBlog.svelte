@@ -39,9 +39,6 @@
   section.from-blog-section div.cta {
     padding-block-start: 1.5rem; /* 24px */
   }
-  section.from-blog-section button.btn {
-    --btn-padding: 12px 36px;
-  }
   ul.featured-articles {
     list-style: none;
     width: 100%;
@@ -55,6 +52,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  div.cta > button.btn {
+    --btn-padding: .75rem 1.5rem; /* 12px 24px */
   }
 </style>
 

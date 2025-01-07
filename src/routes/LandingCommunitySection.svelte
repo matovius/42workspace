@@ -66,6 +66,12 @@
         </li>
       </ul>
     </div>
+
+    <div class="cta">
+      <button class="btn btn-default" aria-label="Explore our spaces">
+        <span aria-hidden="true">Explore our spaces</span>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -77,6 +83,7 @@
   section.community-and-offering-section > div.container {
     padding-block: 3.75rem; /* 60px */
   }
+
   /* Community */
   div.community {
     display: flex;
@@ -91,6 +98,7 @@
       }
     }
   }
+
   /* Offering */
   div.offering {
     display: flex;
@@ -119,5 +127,16 @@
     aspect-ratio: 1;
     border-radius: 50%;
     background: var(--clr-white);
+  }
+
+  /* CTA */
+  div.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block-start: 3.75rem; /* 60px */
+  }
+  div.cta > button.btn {
+    --btn-padding: .75rem 1.5rem; /* 12px 24px */
   }
 </style>

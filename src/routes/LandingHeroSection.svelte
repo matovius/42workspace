@@ -95,7 +95,7 @@
   div.featured div.featured-link {
     width: 7.5rem; /* 120px*/
     height: 2.25rem; /* 36px */
-    background: var(--clr-neutral-200);
+    background: var(--clr-neutral-800);
     border-radius: 9999rem;
   }
 

@@ -28,7 +28,7 @@
 </section>
 
 <style>
-  /* HERO SECTION */
+  /* FROM BLOG SECTION */
   section.from-blog-section > div.container {
     width: 100%;
     padding-block: 3.75rem; /* 60px */
@@ -39,6 +39,8 @@
   section.from-blog-section div.cta {
     padding-block-start: 1.5rem; /* 24px */
   }
+
+  /* Featured Articles */
   ul.featured-articles {
     list-style: none;
     width: 100%;
@@ -48,6 +50,8 @@
     padding-block-start: 1.5rem; /* 24px */
     margin-inline: auto;
   }
+
+  /* CTA */
   div.cta {
     display: flex;
     justify-content: center;

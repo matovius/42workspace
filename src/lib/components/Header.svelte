@@ -123,7 +123,7 @@
     --nav-hover-color: var(--clr-neutral-950);
     --nav-outline-color: var(--clr-neutral-950);
   }
-  a.nav-link.current, header[data-scrolled=true] a.nav-link.current {
+  a.nav-link.current {
     --nav-color: var(--clr-primary-500);
     --nav-hover-color: var(--clr-primary-500);
   }

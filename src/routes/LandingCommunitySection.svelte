@@ -13,7 +13,7 @@
     </div>
 
     <div class="offering">
-      <h4 class="h4">What we offer at 42workspace</h4>
+      <h6 class="h5">What we offer at 42workspace</h6>
 
       <ul class="offerings-list">
         <li>
@@ -108,7 +108,7 @@
     gap: 24px;
     padding-block-start: 3.75rem; /* 60px */
   }
-  div.offering > h4.h4 {
+  div.offering > h6 {
     text-align: center;
     color: color-mix(in oklab, var(--clr-neutral-800), transparent 50%);
   }

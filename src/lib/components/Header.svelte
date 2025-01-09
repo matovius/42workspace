@@ -1,9 +1,11 @@
 <script lang="ts">
+  import { page } from "$app/stores";
 	import { browser } from "$app/environment";
-	import Logo from "$lib/components/Logo.svelte";
-	import Modal from "$lib/components/primitives/Modal.svelte";
 	import { quadOut } from "svelte/easing";
 	import { fly } from "svelte/transition";
+	import Logo from "$lib/components/Logo.svelte";
+	import Modal from "$lib/components/primitives/Modal.svelte";
+  import { GeneralNavLinks } from "$lib/scripts/links";
 
   let isMobileMenuOpen: boolean = $state(false);
   let isHeaderScrolled: boolean = $state(false);
@@ -32,18 +34,11 @@
     <div class="side end">
       <nav>
         <ul class="nav-list">
-          <li>
-            <a href="/" class="nav-link">Spaces</a>
-          </li>
-          <li>
-            <a href="/" class="nav-link">Events</a>
-          </li>
-          <li>
-            <a href="/" class="nav-link">Pricing</a>
-          </li>
-          <li>
-            <a href="/" class="nav-link">Blog</a>
-          </li>
+          {#each GeneralNavLinks as link}
+            <li>
+              <a href={link.url} class="nav-link {$page.url.pathname.includes(link.url) ? 'current' : ''}">{link.label}</a>
+            </li>
+          {/each}
         </ul>
       </nav>
       
@@ -65,18 +60,11 @@
                 </button>
               </div>
               <ul class="mobile-nav-list">
-                <li>
-                  <a href="/" class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>Spaces</a>
-                </li>
-                <li>
-                  <a href="/" class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>Events</a>
-                </li>
-                <li>
-                  <a href="/" class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>Pricing</a>
-                </li>
-                <li>
-                  <a href="/" class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>Blog</a>
-                </li>
+                {#each GeneralNavLinks as link}
+                  <li>
+                    <a href={link.url} class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>{link.label}</a>
+                  </li>
+                {/each}
                 <li>
                   <a href="/" class="btn btn-primary" onclick={() => { isMobileMenuOpen = false; }}>Book a tour</a>
                 </li>

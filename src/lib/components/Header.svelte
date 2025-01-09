@@ -1,18 +1,14 @@
 <script lang="ts">
   import { page } from "$app/stores";
 	import { browser } from "$app/environment";
-	import { quadOut } from "svelte/easing";
-	import { fly } from "svelte/transition";
 	import Logo from "$lib/components/Logo.svelte";
-	import Modal from "$lib/components/primitives/Modal.svelte";
   import { GeneralNavLinks } from "$lib/scripts/links";
 
-  let isMobileMenuOpen: boolean = $state(false);
   let isHeaderScrolled: boolean = $state(false);
 
   function checkScroll() {
     if (browser) {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 20) {
         isHeaderScrolled = true;
       } else {
         isHeaderScrolled = false;
@@ -46,32 +42,6 @@
         <button class="btn {isHeaderScrolled ? 'btn-default' : 'btn-inverse'} btn-book-a-tour" aria-label="Book a tour">
           <span aria-hidden="true">Book a tour</span>
         </button>
-      </div>
-      <div class="mobile-nav">
-        <button class="btn btn-inverse" aria-label="Open navigation menu" onclick={() => { isMobileMenuOpen = true; }}>
-          <span aria-hidden="true">Menu</span>
-        </button>
-        <Modal bind:isOpen={isMobileMenuOpen}>
-          {#if isMobileMenuOpen}
-            <div class="mobile-nav-menu" transition:fly={{ duration: 200, easing: quadOut, x: 0, y: "-100%", opacity: 1 }}>
-              <div>
-                <button class="btn btn-ghost" aria-label="Close navigation menu" onclick={() => { isMobileMenuOpen = false; }}>
-                  <span aria-hidden="true">Close</span>
-                </button>
-              </div>
-              <ul class="mobile-nav-list">
-                {#each GeneralNavLinks as link}
-                  <li>
-                    <a href={link.url} class="nav-link mobile" onclick={() => { isMobileMenuOpen = false; }}>{link.label}</a>
-                  </li>
-                {/each}
-                <li>
-                  <a href="/" class="btn btn-primary" onclick={() => { isMobileMenuOpen = false; }}>Book a tour</a>
-                </li>
-              </ul>
-            </div>
-          {/if}
-        </Modal>
       </div>
     </div>
   </div>
@@ -134,11 +104,7 @@
   }
 
   div.side.end nav {
-    display: none;
-
-    @media screen and (min-width: 31.25rem) /* 500px */ {
-      display: block;
-    }
+    display: block;
   }
   ul.nav-list {
     list-style: none;
@@ -165,38 +131,9 @@
   div.side.end > .cta {
     display: none;
 
-    & ~ .mobile-nav {
-      display: block;
-    }
-
     @media screen and (min-width: 31.25rem) /* 500px */ {
       display: block;
-
-      & ~ .mobile-nav {
-        display: none;
-      }
     }
-  }
-
-  div.mobile-nav-menu {
-    /* width: 100%; */
-    background: var(--clr-white);
-    padding: 12px;
-    position: fixed;
-    top: 0;
-    inset-inline: 0;
-    border-radius: 0 0 1.5rem 1.5rem; /* 24px */
-  }
-  div.mobile-nav-menu > div:nth-child(1) {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  ul.mobile-nav-list {
-    list-style: none;
-    display: grid;
-    gap: .75rem; /* 12px */
   }
 
   .btn.btn-inverse.btn-book-a-tour {
@@ -204,4 +141,3 @@
     --btn-hover-color: var(--clr-white);
   }
 </style>
-

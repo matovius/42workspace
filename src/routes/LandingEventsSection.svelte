@@ -34,6 +34,7 @@
   section.events-section > div.container {
     padding-block: 3.75rem; /* 60px */
   }
+  
   /* Lead */
   section.events-section div.lead {
     display: flex;
@@ -52,10 +53,11 @@
   section.events-section div.cta {
     padding-block-start: 1.5rem; /* 24px */
   }
-  section.events-section button.btn {
-    --btn-padding: 12px 36px;
+  div.cta > button.btn {
+    --btn-padding: .75rem 1.5rem; /* 12px 24px */
     --btn-outline-color: var(--clr-white);
   }
+
   /* Image Cloud */
   div.image-cloud {
     padding-block-start: 1.5rem; /* 24px */

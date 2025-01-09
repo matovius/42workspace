@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Logo from "./Logo.svelte";
+  import { GeneralNavLinks, ExtraNavLinks, SocialLinks, LegalLinks } from "$lib/scripts/links";
 
 </script>
 
@@ -229,54 +230,32 @@
 
     <div class="links">
       <ul class="link-group site-links">
-        <li>
-          <a href="/#" class="nav-link">Spaces</a>
-        </li>
-        <li>
-          <a href="/#" class="nav-link">Events</a>
-        </li>
-        <li>
-          <a href="/#" class="nav-link">Pricing</a>
-        </li>
-        <li>
-          <a href="/#" class="nav-link">Blog</a>
-        </li>
-        <li>
-          <a href="/#" class="nav-link">Startup Visa Program</a>
-        </li>
-        <li>
-          <a href="/#" class="nav-link">Careers</a>
-        </li>
+        {#each GeneralNavLinks as link}
+          <li>
+            <a href={link.url} class="nav-link">{link.label}</a>
+          </li>
+        {/each}
+        {#each ExtraNavLinks as link}
+          <li>
+            <a href={link.url} class="nav-link">{link.label}</a>
+          </li>
+        {/each}
       </ul>
 
       <ul class="link-group social-links">
-        <li>
-          <a href="/#" class="nav-link">Get in touch</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/" class="nav-link">Facebook</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/" class="nav-link">LinkedIn</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" class="nav-link">Instagram</a>
-        </li>
+        {#each SocialLinks as link}
+          <li>
+            <a href={link.url} target="_blank" rel="noopener noreferrer" class="nav-link">{link.label}</a>
+          </li>
+        {/each}
       </ul>
       
       <ul class="link-group legal-links">
-        <li>
-          <a href="/#" class="nav-link">Code of conduct</a>
-        </li>
-        <li>
-          <a href="/#" class="nav-link">Press kit</a>
-        </li>
-        <li>
-          <a href="/#" class="nav-link">Privacy policy</a>
-        </li>
-        <li>
-          <a href="/#" class="nav-link">Terms and conditions</a>
-        </li>
+        {#each LegalLinks as link}
+          <li>
+            <a href={link.url} class="nav-link">{link.label}</a>
+          </li>
+        {/each}
       </ul>
     </div>
 

@@ -261,7 +261,7 @@
 
     <div class="statements">
       <small class="small vat-statement">All prices exclude VAT/BTW unless mentioned otherwise.</small>
-      <small class="small copyright-statement">Copyright 42workspace - 2024. Constructed by The Webware Workshop.</small>
+      <small class="small copyright-statement">Copyright 42workspace - 2024. Constructed by Martin Matovu.</small>
     </div>
   </div>
 </footer>
